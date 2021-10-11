@@ -1,0 +1,195 @@
+@import 'mixins';
+
+// Colours
+$profileblue: hsl(246, 80%, 60%);
+$workred: hsl(15, 100%, 70%);
+$playblue: hsl(195, 74%, 62%);
+$studyred: hsl(348, 100%, 68%);
+$exercisegreen: hsl(145, 58%, 55%);
+$socialviolet: hsl(264, 64%, 52%);
+$selfcareorange: hsl(43, 84%, 65%);
+
+// Neutral
+$verydarkblue: hsl(226, 43%, 10%);
+$darkblue: hsl(235, 46%, 20%);
+$desaturatedblue: hsl(235, 45%, 61%);
+$paleblue: hsl(236, 100%, 87%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: $verydarkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        height: auto;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+
+        .left {
+            width:20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 450px;
+            position: relative;
+
+            #top {
+                height: 60%;
+                width: 100%;
+                background-color: $profileblue;
+                padding: 20px 0 0 20px;
+                border-radius: 10px;
+                z-index: 10;
+
+                img {
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    margin-bottom: 30px;
+                }
+                div {
+                    p {
+                    color: $paleblue;
+                    font-size: 12px;
+                    font-weight: 300;
+                    margin-bottom: 5px;
+                }
+                    h3 {
+                        color: white;
+                        font-size: 30px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            #bottom {
+                position: absolute;
+                width: 100%;
+                height: 35%;
+                padding: 40px 0 0 20px;
+                background-color: $darkblue;
+                bottom: 50px;
+                border-radius: 10px;
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        margin-bottom: 10px;
+                        a {
+                            text-decoration: none;
+                            color: $desaturatedblue;
+                            font-size: 12px;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .right {
+            width: 50%;
+            margin-left: 20px;
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+
+            .routine {
+                position: relative;
+                height: 200px;
+                width: 200px;
+                margin-right: 25px;
+                
+                .back {
+                    position: relative;
+                    height: 60px;
+                    border-radius: 10px;
+                   
+                   object {
+                       position: absolute;
+                       right: 10px;
+                   }
+                }
+                .front {
+                    position: absolute;
+                    z-index: 99;
+                    top: 40px;
+                    height: 140px;
+                    width: 100%;
+                    border-radius: 10px;
+                    background-color: $darkblue;
+                    color: white;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .heading {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h4 {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                    .time {
+                        h1 {
+                            font-size: 45px;
+                            font-weight: 300;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            color: $paleblue;
+                            font-size: 12px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.work {
+    background-color: $workred;
+}
+
+.play {
+    background-color:  $playblue;
+}
+
+.study {
+    background-color: $studyred;
+}
+
+.exercise {
+    background-color: $exercisegreen;
+}
+
+.social {
+    background-color: $socialviolet;
+}
+
+.selfcare {
+    background-color: $selfcareorange;
+}

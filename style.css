@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #0f1424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main section {
+  height: auto;
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main section .left {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 450px;
+  position: relative;
+}
+main section .left #top {
+  height: 60%;
+  width: 100%;
+  background-color: #5847eb;
+  padding: 20px 0 0 20px;
+  border-radius: 10px;
+  z-index: 10;
+}
+main section .left #top img {
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+main section .left #top div p {
+  color: #bdc1ff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+main section .left #top div h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
+main section .left #bottom {
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  padding: 40px 0 0 20px;
+  background-color: #1c1f4a;
+  bottom: 50px;
+  border-radius: 10px;
+}
+main section .left #bottom ul {
+  list-style-type: none;
+}
+main section .left #bottom ul li {
+  margin-bottom: 10px;
+}
+main section .left #bottom ul li a {
+  text-decoration: none;
+  color: #6f76c8;
+  font-size: 12px;
+  cursor: pointer;
+}
+main section .left #bottom ul li a:hover {
+  color: white;
+}
+main section .right {
+  width: 50%;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main section .right .routine {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin-right: 25px;
+}
+main section .right .routine .back {
+  position: relative;
+  height: 60px;
+  border-radius: 10px;
+}
+main section .right .routine .back object {
+  position: absolute;
+  right: 10px;
+}
+main section .right .routine .front {
+  position: absolute;
+  z-index: 99;
+  top: 40px;
+  height: 140px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #1c1f4a;
+  color: white;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main section .right .routine .front .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main section .right .routine .front .heading h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+main section .right .routine .front .time h1 {
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+main section .right .routine .front .time p {
+  color: #bdc1ff;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.work {
+  background-color: #ff8c66;
+}
+
+.play {
+  background-color: #56c2e6;
+}
+
+.study {
+  background-color: #ff5c7c;
+}
+
+.exercise {
+  background-color: #4acf81;
+}
+
+.social {
+  background-color: #7536d3;
+}
+
+.selfcare {
+  background-color: #f1c65b;
+}
